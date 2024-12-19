@@ -9,7 +9,7 @@
                         @include styleText($color-gray-0,$fs-1 - 1,$fw-0);
                         margin: $mg-0 0;
                 }
-                .card-starts{
+                .card-stars{
                         i{
                                 @include styleText($color-yellow-0,$fs-1,$fw-3);
                         }
@@ -31,6 +31,32 @@
                                 &:last-child{
                                         @include styleText($color-black-0,$fs-0,$fw-1);
                                 }
+                        }
+                }
+        }
+}
+.card--feedback{
+        height:280px;
+        .card-body{
+                padding: 2rem;
+                .card_top{
+                        display: flex;
+                        margin-bottom: $mg-5;
+                        .card_avatar{
+                                margin-right: $mg-5;
+                                img{
+                                        width: 64px;
+                                        height: 64px;
+                                        border-radius: 50%;
+                                }
+                        }
+                        .card_name{
+                                margin-bottom: 0;
+                        }
+                }
+                .card_bottom{
+                        p{
+                                @include styleText($color-black-0,$fs-0,$fw-0);
                         }
                 }
         }

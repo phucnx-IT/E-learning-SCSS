@@ -42,6 +42,62 @@ body {
   right: -30px;
 }
 
+footer {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+footer .footer_top {
+  width: 90%;
+  margin: 40px auto;
+}
+footer .footer_top ul {
+  height: 140px;
+}
+footer .footer_top ul li {
+  flex-basis: 25%;
+}
+footer .footer_top ul li a {
+  color: #007791;
+}
+footer .footer_top ul li a.bold {
+  font-weight: 700;
+}
+footer .footer_top ul li a:hover {
+  color: #007791;
+}
+footer .footer_top .btn-group {
+  display: block;
+}
+footer .footer_top .btn-group .btn-dropup {
+  min-width: 160px;
+  box-shadow: none;
+}
+footer .footer_top .btn-group .btn-dropup i {
+  padding: 0 5px;
+}
+footer .footer_top .btn-group .btn-dropup::after {
+  margin-left: 30%;
+}
+footer .footer_top .btn-group .dropdown-menu li a {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+footer .footer_bottom {
+  width: 90%;
+  margin: 30px auto;
+}
+footer .footer_bottom img {
+  width: 110px;
+  margin-right: 10px;
+}
+footer .footer_bottom .nav-link {
+  color: #007791;
+  font-size: 13px;
+  font-weight: normal;
+}
+
 .myNavbar {
   box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
 }
@@ -277,6 +333,81 @@ body {
   margin: 10px 0;
 }
 
+.categories {
+  margin-top: 32px;
+}
+.categories .categories_content {
+  width: 90%;
+  margin: 0 auto;
+}
+.categories .categories_content h2 {
+  color: #29303b;
+  font-size: 24px;
+  font-weight: normal;
+}
+.categories .categories_item {
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid rgba(20, 23, 28, 0.1);
+  margin-bottom: 15px;
+}
+.categories .categories_item:hover {
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+}
+
+.students {
+  margin: 10px 0;
+}
+.students .students_content {
+  width: 90%;
+  margin: 0 auto;
+}
+.students .students_content h2 {
+  color: #29303b;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.partners {
+  background-color: #f7f8fa;
+  padding-top: 20px;
+}
+.partners .partners_content {
+  width: 70%;
+  margin: 0 auto;
+}
+.partners .partners_content .partners_text {
+  text-align: center;
+}
+.partners .partners_content .partner_logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jobs {
+  background-color: #f7f8fa;
+  padding-top: 20px;
+}
+.jobs .jobs_content {
+  width: 90%;
+  margin: 0 auto;
+}
+.jobs .jobs_content .col {
+  display: flex;
+  justify-content: center;
+}
+.jobs .jobs_content .col .jobs_items {
+  text-align: center;
+  max-width: 450px;
+}
+.jobs .jobs_content .col .jobs_items h2 {
+  color: #505763;
+  font-size: 19px;
+  font-weight: 600;
+}
+
 .btn-white {
   background-color: #fff;
   color: #686f7a;
@@ -305,6 +436,21 @@ body {
   background-color: #521822;
   color: #fff;
   border-color: #521822;
+}
+
+.btn-dropup {
+  background-color: #fff;
+  color: #686f7a;
+  border-color: #505763;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 10px;
+  min-width: 100px;
+}
+.btn-dropup:hover {
+  background-color: transparent;
+  color: #29303b;
+  border-color: #29303b;
 }
 
 .cover {
@@ -389,17 +535,17 @@ body {
   font-weight: normal;
   margin: 5px 0;
 }
-.card .card-body .card-starts i {
+.card .card-body .card-stars i {
   color: #f4c150;
   font-size: 13px;
   font-weight: 900;
 }
-.card .card-body .card-starts .card_rating {
+.card .card-body .card-stars .card_rating {
   color: #686f7a;
   font-size: 13px;
   font-weight: 600;
 }
-.card .card-body .card-starts .card_total {
+.card .card-body .card-stars .card_total {
   color: #686f7a;
   font-size: 12px;
   font-weight: normal;
@@ -418,4 +564,31 @@ body {
   color: #29303b;
   font-size: 15px;
   font-weight: 600;
+}
+
+.card--feedback {
+  height: 280px;
+}
+.card--feedback .card-body {
+  padding: 2rem;
+}
+.card--feedback .card-body .card_top {
+  display: flex;
+  margin-bottom: 15px;
+}
+.card--feedback .card-body .card_top .card_avatar {
+  margin-right: 15px;
+}
+.card--feedback .card-body .card_top .card_avatar img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.card--feedback .card-body .card_top .card_name {
+  margin-bottom: 0;
+}
+.card--feedback .card-body .card_bottom p {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
 }/*# sourceMappingURL=main.css.map */
