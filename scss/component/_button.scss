@@ -1,0 +1,13 @@
+.btn-white{
+        @include button-style($color-white-0,$color-gray-0,$color-black-light,$fs-0,$fw-1,$pd-0 + 1,$pd-0 + 2, 100px);
+        &:hover{
+                @include button-style-hover(transparent,$color-black-0,$color-black-0);
+        }
+}
+.btn-red{
+        @include button-style($color-red-0,$color-white-0,$color-red-0,$fs-0,$fw-1,$pd-0 + 1,$pd-0 + 2, 100px);
+        &:hover{
+                @include button-style-hover($color-red-1,$color-white-0,$color-red-1);
+        }
+}
+
