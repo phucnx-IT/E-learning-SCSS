@@ -104,6 +104,9 @@ footer .footer_bottom .nav-link {
 .myNavbar .reset_padding {
   padding: 0;
 }
+.myNavbar .navbar-toggler {
+  margin-left: 20px;
+}
 .myNavbar .navbarLeft {
   display: flex;
   align-items: center;
@@ -116,7 +119,7 @@ footer .footer_bottom .nav-link {
 .myNavbar .navbarLeft .navbar-brand img {
   width: 110px;
 }
-.myNavbar .navbarLeft .categories {
+.myNavbar .navbarLeft .categories-header {
   flex-grow: 1;
   text-align: center;
   cursor: pointer;
@@ -124,7 +127,7 @@ footer .footer_bottom .nav-link {
   font-size: 13px;
   font-weight: normal;
 }
-.myNavbar .navbarLeft .categories i {
+.myNavbar .navbarLeft .categories-header i {
   color: #a1a7b3;
 }
 .myNavbar .navbarLeft .form_search {
@@ -171,6 +174,9 @@ footer .footer_bottom .nav-link {
 .myNavbar .navbarLeft .form_search .input-group .input-group-text:hover {
   color: #fff;
   background-color: #ec5252;
+}
+.myNavbar .navbarRight {
+  padding-right: 20px;
 }
 .myNavbar .navbarRight .navbar-nav {
   justify-content: space-between;
@@ -230,6 +236,36 @@ footer .footer_bottom .nav-link {
 .myNavbar .navbarRight .navbar-nav .nav-item .shopping_cart:hover {
   background-color: rgba(20, 23, 28, 0.05);
 }
+.myNavbar .navbarRight .navbar-nav .buttons-header {
+  display: flex;
+  gap: 10px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1420px) {
+  .myNavbar .navbarRight .navbar-nav .nav-item .nav-text {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .myNavbar .navbarRight .navbar-nav .nav-item .btn-white, .myNavbar .navbarRight .navbar-nav .nav-item .btn-red {
+    padding: 5px;
+    min-width: 60px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .myNavbar .nav-instructor {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .myNavbar .navbarLeft .categories-header, .myNavbar .navbarLeft .form_search {
+    display: none;
+  }
+  .myNavbar .navbarRight .navbar-nav .nav-item {
+    margin-left: auto;
+  }
+  .myNavbar .navbarRight .navbar-nav .buttons-header {
+    display: none;
+  }
+}
 
 .intro {
   background-image: linear-gradient(-45deg, #ec5252, #6e1a52);
@@ -260,6 +296,16 @@ footer .footer_bottom .nav-link {
   color: #fff;
   font-size: 15px;
   font-weight: normal;
+}
+@media screen and (max-width: 1200px) {
+  .intro .intro_content .intro_icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro {
+    display: none;
+  }
 }
 
 .courses {
@@ -385,6 +431,24 @@ footer .footer_bottom .nav-link {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 1200px) {
+  .partners .partners_content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .partners .partners_content {
+    width: 60%;
+  }
+  .partners .partners_content .partner_logos {
+    flex-wrap: wrap;
+  }
+  .partners .partners_content .partner_logos .partner_items {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
 
 .jobs {
   background-color: #f7f8fa;
@@ -406,6 +470,11 @@ footer .footer_bottom .nav-link {
   color: #505763;
   font-size: 19px;
   font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .jobs .border-end {
+    border: none !important;
+  }
 }
 
 .btn-white {
@@ -516,6 +585,12 @@ footer .footer_bottom .nav-link {
 .cover .cover_content .form_cover .input-group .input-group-text:hover {
   color: #fff;
   background-color: #ec5252;
+}
+@media screen and (max-width: 576px) {
+  .cover .cover_content {
+    max-width: 400px;
+    left: 10%;
+  }
 }
 
 .card {

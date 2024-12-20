@@ -63,3 +63,14 @@
                 }
         }
 }
+@mixin responsive($screen){
+        @if(map-has-key($map: $breakpoints, $key: $screen)){
+               $value: map-get($breakpoints, $screen);
+               @media screen and (max-width: $value){
+                        @content;
+               }
+        }
+        @else{
+                @warn "`#{$screen}` is not defined in `$breakpoints` map.";
+        }
+}

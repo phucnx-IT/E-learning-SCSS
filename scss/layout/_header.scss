@@ -3,6 +3,9 @@
         .reset_padding{
                 padding: 0;
         }
+        .navbar-toggler{
+                margin-left: $pd-3;
+        }
         .navbarLeft{
                 display: flex;
                 align-items: center;
@@ -14,7 +17,7 @@
                                 width: 110px;
                         }
                 }
-                .categories{
+                .categories-header{
                         flex-grow: 1;
                         text-align: center;
                         cursor: pointer;
@@ -29,6 +32,7 @@
                 }
         }
         .navbarRight{
+                padding-right: $pd-3;
                 .navbar-nav{
                         justify-content: space-between;
                         align-items: center;
@@ -84,6 +88,48 @@
                                         &:hover{
                                                 background-color: $color-gray-1;
                                         }
+                                }
+                        }
+                        .buttons-header{
+                                display: flex;
+                                gap: 10px;
+                        }
+                }
+        }
+        @media screen and (min-width:1200px) and (max-width: 1420px){
+                .navbarRight{
+                        .navbar-nav{
+                                .nav-item{
+                                        .nav-text{
+                                                font-size: $fs-1 - 1;
+                                                white-space: nowrap;
+                                        }
+                                        .btn-white, .btn-red{
+                                                padding: $pd-2;
+                                                min-width: 60px;
+                                        }
+                                }
+                        }
+                }
+        }
+        @include responsive(extra-large){
+                .nav-instructor{
+                        display: none;
+                }
+        }
+        @include responsive(medium){
+                .navbarLeft{
+                        .categories-header, .form_search{
+                                display: none;
+                        }
+                }
+                .navbarRight{
+                        .navbar-nav{
+                                .nav-item{
+                                        margin-left:auto;
+                                }
+                                .buttons-header{
+                                        display: none;
                                 }
                         }
                 }

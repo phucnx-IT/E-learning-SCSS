@@ -13,4 +13,22 @@
                         align-items: center;
                 }
         }
+        @include responsive('extra-large'){
+                .partners_content{
+                        width: 90%;
+                }
+        }
+        @include responsive('medium'){
+                .partners_content{
+                        width: 60%;
+                        .partner_logos{
+                                flex-wrap: wrap;
+                                .partner_items{
+                                        width: 50%;
+                                        text-align: center;
+                                        margin-bottom: $mg-3;
+                                }
+                        }
+                }
+        }
 }
