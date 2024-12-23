@@ -19,6 +19,8 @@
 @import "layout/student";
 @import "layout/partner";
 @import "layout/jobs";
+@import "layout/sidebarMini";
+
 //COMPONENTS
 @import "component/button";
 @import "component/cover";
@@ -28,4 +30,12 @@
 @import "page/home";
 
 //THEMES
+@import "theme/dark/resetDark";
+@import "theme/dark/sidebarMiniDark";
+@import "theme/dark/headerDark";
+@import "theme/dark/buttonDark";        
+@import "theme/dark/coursesDark";
+@import "theme/dark/cardDark";
+@import "theme/dark/categoriesDark";
+@import "theme/dark/studentDark";
 

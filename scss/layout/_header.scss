@@ -16,6 +16,12 @@
                         img{
                                 width: 110px;
                         }
+                        .logo_white{
+                                display: none;
+                               }
+                        .logo_black{
+                                display: inline-block;
+                               }
                 }
                 .categories-header{
                         flex-grow: 1;
@@ -28,11 +34,11 @@
                 }
                 .form_search{
                         flex-grow: 8;
-                        @include styleFormSearch($color-white-cream,$color-white-0,$color-gray-4);                
+                        @include styleFormSearch($color-white-cream,$color-white-0,$color-gray-4,$color-black-light);                
                 }
         }
         .navbarRight{
-                padding-right: $pd-3;
+                padding: 0 $pd-3;
                 .navbar-nav{
                         justify-content: space-between;
                         align-items: center;

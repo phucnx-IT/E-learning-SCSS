@@ -17,17 +17,17 @@
         color: $color-text;
         border-color: $color-border;
 }
-@mixin styleFormSearch($bg-color,$bg-color-focus,$border-color){
+@mixin styleFormSearch($bg-color,$bg-color-focus,$border-color,$color){
         .input-group{
                 background-color: $bg-color;
                 .form-control{
                         background-color: transparent;
                         border-color: transparent;
-                        color: $color-black-light;
+                        color: $color;
                         box-shadow: none;
                         transition: none;
                         &::placeholder{
-                                color: $color-black-light;
+                                color: $color;
                         }
                         &:focus{
                                 background-color: $bg-color-focus;

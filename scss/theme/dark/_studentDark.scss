@@ -1,0 +1,10 @@
+.darkMode{
+        .students{
+                background-color: $color-dark-6;
+                .students_content{
+                        h2{
+                                color: $color-dark-5;
+                        }
+                }
+        }
+}

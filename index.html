@@ -29,6 +29,24 @@
 </head>
 
 <body>
+        <!-- SIDEBAR MINI -->
+        <div class="sidebarMini">
+                <button class="sidebarMini_button" onclick="sidebarMini()">
+                        <i class="fa fa-cog"></i>
+                </button>
+                <div class="sidebarMini_content">
+                        <h2>Dark Mode</h2>
+                        <div class="d-flex">
+                                <span>Off</span>
+                                <label for="checkbox_darkMode" class="switch">
+                                        <input type="checkbox" id="checkbox_darkMode" class="d-none" onchange="darkMode()">
+                                        <div class="slider"></div>
+                                </label>
+                                <span>On</span>
+                        </div>
+                </div>
+        </div>
+
         <header>
                 <nav class="myNavbar navbar navbar-expand-md">
                         <div class="d-md-none col-sm-2 col-3">
@@ -41,7 +59,8 @@
                         <div class="col-xl-7 col-md-8 col-sm-8 col-6 reset_padding">
                                 <div class="navbarLeft">
                                         <a class="navbar-brand" href="#">
-                                                <img src="img/logo-coral.svg" alt="logo" srcset="">
+                                                <img class="logo_black" src="img/logo-coral.svg" alt="logo black" srcset="">
+                                                <img class="logo_white" src="img/logo-coral-white.svg" alt="logo white" srcset="">
                                         </a>
                                         <div class="categories-header">
                                                 <i class="fa fa-th"></i>
@@ -566,6 +585,30 @@
                                                 </div>
                                         </div>
                                 </div>
+                                <div class="card">
+                                        <img src="img/kh14.jpg" class="card-img-top" alt="kh14">
+                                        <div class="card-body">
+                                                <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner
+                                                        to Expert</h5>
+                                                <p class="card-text">Colt Steele Ian
+                                                        Schoonover</p>
+                                                <div class="card-stars">
+                                                        <span>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star-half"></i>
+                                                        </span>
+                                                        <span class="card_rating">4.6</span>
+                                                        <span class="card_total">(11.597)</span>
+                                                </div>
+                                                <div class="card_price">
+                                                        <span>$19.99</span>
+                                                        <span>$9.99</span>
+                                                </div>
+                                        </div>
+                                </div>
                         </div>
                 </div>
         </section>
@@ -1031,7 +1074,7 @@
                                         margin: 5
                                 },
                                 1450:{
-                                        items: 4,
+                                        items: 6,
                                         margin:6
                                 }
                         }
