@@ -18,7 +18,6 @@ function sidebarMini(){
 }
 
 //Dark Mode
-darkMode();
 function darkMode(){
         var body = document.querySelector('body');
         body.classList.toggle('darkMode');
